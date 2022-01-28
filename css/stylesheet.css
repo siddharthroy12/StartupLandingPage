@@ -12,6 +12,7 @@
 
 :root {
 	--page-background: #161718;
+	--card-color: #313131;
 	--primary-text-color: #E7E7E7;
 	--secondary-text-color: #A0A0A0;
 	--accent-color: #4864FA;
@@ -35,11 +36,15 @@ body {
 	color: var(--primary-text-color);
 	text-align: center;
 	margin-bottom: 20px;
+	font-size: 2rem;
 }
 
 .section-paragraph {
 	color: var(--secondary-text-color);
 	text-align: center;
+	margin-bottom: 90px;
+	font-size: 1.2rem;
+	font-weight: 500;
 }
 
 /* Header */
@@ -103,6 +108,8 @@ body {
 .hero-paragraph {
 	color: var(--secondary-text-color);
 	margin-top: 20px;
+	font-weight: 500;
+	font-size: 1.2rem;
 }
 
 .hero-cta {
@@ -115,7 +122,7 @@ body {
 	border: none;
 	background-color: var(--accent-color);
 	padding: 1.0em 3.5em;
-	font-size: 1rem;
+	font-size: 1.2rem;
 	color: var(--primary-text-color);
 	font-weight: 500;
 	margin-bottom: 50px;
@@ -177,10 +184,13 @@ body {
 .about__heading {
 	color: var(--primary-text-color);
 	margin-bottom: 20px;
+	font-size: 2rem;
 }
 
 .about__paragraph {
 	color: var(--secondary-text-color);
+	font-weight: 500;
+	font-size: 1.2rem;
 }
 
 .about__specs {
@@ -190,7 +200,7 @@ body {
 	margin: 30px 0;
 	grid-row-gap: 20px;
 	grid-column-gap: 40px;
-	transform: translateX(30px);;
+	transform: translateX(30px);
 }
 
 .about__specs li {
@@ -214,3 +224,39 @@ body {
 }
 
 /* Features section */
+
+.feature {
+	background-color: var(--card-color);
+	padding: 50px 30px;
+	padding-top: 60px;
+	padding-bottom: 30px;
+	position: relative;
+	border-radius: 5px;
+	margin: auto;
+	margin-bottom: 90px;
+	max-width: 400px;
+}
+
+.feature__heading {
+	color: var(--primary-text-color);
+	font-size: 1.7rem;
+	font-weight: 500;
+	margin-bottom: 20px;
+}
+
+.feature__paragraph {
+	color: var(--secondary-text-color);
+	font-weight: 500;
+	font-size: 1.2rem;
+}
+
+.feature__icon {
+	position: absolute;
+	top: -40px;
+	background-color: var(--accent-color);
+	border-radius: 100px;
+	width: 80px;
+	height: 80px;
+	display: grid;
+	place-content: center;
+}
