@@ -42,9 +42,11 @@ body {
 .section-paragraph {
   color: var(--secondary-text-color);
   text-align: center;
+  margin: auto;
   margin-bottom: 90px;
   font-size: 1.2rem;
   font-weight: 500;
+  max-width: 500px;
 }
 
 /* Header */
@@ -109,7 +111,7 @@ body {
   color: var(--secondary-text-color);
   margin-top: 20px;
   font-weight: 500;
-  font-size: 1.2rem;
+  font-size: 1em;
 }
 
 .hero-cta {
@@ -200,7 +202,7 @@ body {
   margin: 30px 0;
   grid-row-gap: 20px;
   grid-column-gap: 40px;
-  transform: translateX(30px);
+  transform: translateX(20px);
 }
 
 .about__specs li {
@@ -228,7 +230,7 @@ body {
 .feature {
   background-color: var(--card-color);
   padding: 50px 30px;
-  padding-top: 60px;
+  padding-top: 40px;
   padding-bottom: 30px;
   position: relative;
   border-radius: 5px;
@@ -239,27 +241,36 @@ body {
 
 .feature__heading {
   color: var(--primary-text-color);
-  font-size: 1.7rem;
+  font-size: 1.4rem;
   font-weight: 500;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 .feature__paragraph {
   color: var(--secondary-text-color);
   font-weight: 500;
-  font-size: 1.2rem;
+  font-size: 1em;
 }
 
 .feature__icon {
   position: absolute;
-  top: -40px;
+  top: -30px;
   background-color: var(--accent-color);
   border-radius: 100px;
-  width: 80px;
-  height: 80px;
-  display: grid;
-  place-content: center;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.feature__icon img {
+  width: 30px;
+  height: 30px;
+}
+
+
 
 /* Works section */
 
@@ -300,6 +311,55 @@ body {
 
 .project-title {
   margin-top: 10px;
-  font-size: 1.3em;
+  font-size: 1em;
   color: var(--card-color);
+}
+
+/* Testimonial */
+
+.response-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.response-list > * {
+  margin-bottom: 120px;
+}
+
+.response {
+  background-color: var(--card-color);
+  padding: 1em 2em;
+  padding-top: 3em;
+  position: relative;
+  max-width: 600px;
+  border-radius: 5px;
+}
+
+.customer-name {
+  color: var(--primary-text-color);
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
+.customer-response {
+  color: var(--secondary-text-color);
+  margin: .2em 0;
+  font-size: 1em;
+}
+
+.customer-response::before {
+  content: '“';
+  color: var(--accent-color);
+  font-size: 2em;
+}
+
+.avatar {
+  position: absolute;
+  top: -40px;
+  background-color: var(--accent-color);
+  border-radius: 50px;
+  width: 70px;
+  height: 70px;
 }
