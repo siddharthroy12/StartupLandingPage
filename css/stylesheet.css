@@ -363,3 +363,83 @@ body {
   width: 70px;
   height: 70px;
 }
+
+/* Pricing */
+
+.price-list {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: var(--page-background);
+}
+
+.price-list > * {
+  margin-bottom: 100px;
+}
+
+.price-card {
+  background-color: var(--primary-text-color);
+  padding: 20px;
+  border-radius: 5px;
+  width: 300px;
+  min-height: 400px;
+  position: relative;
+}
+
+.price-level {
+  font-size: 1.5em;
+  font-weight: 500;
+  margin: 12px 0;
+}
+
+.price {
+  font-size: 2em;
+  font-weight: 500;
+  margin-bottom: 18px;
+}
+
+.lil-big {
+  font-size: 1.5em;
+}
+
+.price-features {
+  list-style: none;
+}
+
+.price-features li {
+  color: var(--card-color);
+  margin-bottom: 12px;
+  margin-left: 35px;
+  position: relative;
+  font-size: 1.1em;
+}
+
+.price-list li::before {
+  content: '';
+  position: absolute;
+  background: url('/img/done_accent.svg') 0px 0px/25px 25px;
+  width: 25px;
+  height: 25px;
+  left: -35px;
+  top: 2px;
+}
+
+.price-button {
+  display: block;
+  margin-top: auto;
+  width: calc(100% - 24px);
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  right: 12px;
+  height: 50px;
+  border: none;
+  background-color: var(--accent-color);
+  color: var(--primary-text-color);
+  font-size: 1.3em;
+  font-weight: 500;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
