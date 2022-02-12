@@ -154,6 +154,8 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 50px;
+  max-width: 500px;
+  margin: auto;
 }
 
 .achievement {
@@ -181,6 +183,7 @@ body {
   display: inline-block;
   padding: 0.5em 1em;
   margin-bottom: 30px;
+  width: auto;
 }
 
 .about__heading {
@@ -193,6 +196,7 @@ body {
   color: var(--secondary-text-color);
   font-weight: 500;
   font-size: 1.2rem;
+  max-width: 500px;
 }
 
 .about__specs {
@@ -220,9 +224,15 @@ body {
   left: -30px;
 }
 
+.about__right {
+  display: flex;
+  justify-content: center;
+}
+
 .about__right img {
   display: block;
   width: 100%;
+  max-width: 800px;
 }
 
 /* Features section */
